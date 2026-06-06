@@ -7,6 +7,7 @@
  "field_order": [
   "student_name",
   "course",
+  "semester",
   "course_fee",
   "registration_fee",
   "total_fee"
@@ -21,6 +22,7 @@
   {
    "fieldname": "course",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Course",
    "options": "Course"
   },
@@ -41,12 +43,18 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Total Fee"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Semester"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 08:03:34.335866",
+ "modified": "2026-06-05 16:17:29.508228",
  "modified_by": "Administrator",
  "module": "Enrollment System",
  "name": "Enrollment",
@@ -67,7 +75,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "student_name"
 }
