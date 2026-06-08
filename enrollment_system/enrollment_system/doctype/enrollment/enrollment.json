@@ -7,6 +7,7 @@
  "field_order": [
   "student_name",
   "course",
+  "course_name",
   "semester",
   "course_fee",
   "registration_fee",
@@ -49,12 +50,19 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Semester"
+  },
+  {
+   "fetch_from": "course.course_name",
+   "fetch_if_empty": 1,
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "label": "Course Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 16:17:29.508228",
+ "modified": "2026-06-08 12:01:36.931898",
  "modified_by": "Administrator",
  "module": "Enrollment System",
  "name": "Enrollment",

@@ -148,23 +148,12 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"enrollment_system.tasks.all"
-# 	],
-# 	"daily": [
-# 		"enrollment_system.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"enrollment_system.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"enrollment_system.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"enrollment_system.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	
+	"daily": [
+		"enrollment_system.attendance.update_attendance_count"      
+	]
+}
 
 # Testing
 # -------

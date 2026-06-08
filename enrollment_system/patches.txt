@@ -4,3 +4,7 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+enrollment_system.patches.08_06_2026_rename_course
+enrollment_system.patches.08_06_2026_update_student_status
+enrollment_system.patches.08_06_2026_insert_5_data
+enrollment_system.patches.08_06_2026_course_renaming #2

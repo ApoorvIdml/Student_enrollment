@@ -9,7 +9,9 @@
   "course",
   "semester",
   "student_name",
-  "assignment_details"
+  "assignment_details",
+  "status",
+  "grade"
  ],
  "fields": [
   {
@@ -34,6 +36,17 @@
    "fieldname": "assignment_details",
    "fieldtype": "Small Text",
    "label": "Assignment Details"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nPending\nCompleted"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
   }
  ],
  "grid_page_length": 50,
@@ -44,7 +57,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2026-06-06 11:55:53.910109",
+ "modified": "2026-06-08 16:16:42.810823",
  "modified_by": "Administrator",
  "module": "Enrollment System",
  "name": "Assignment",

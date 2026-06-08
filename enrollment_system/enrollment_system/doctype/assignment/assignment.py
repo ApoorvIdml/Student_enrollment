@@ -6,7 +6,6 @@ from frappe.model.document import Document
 
 
 class Assignment(Document):
-	pass
 
 	def validate(self):
 
@@ -23,7 +22,16 @@ class Assignment(Document):
 			frappe.throw(
 				"Selected student is not enrolled in the selected course or semester"
 			)
-	
+
+	def on_update(self):
+
+		if self.status == "Completed" and not self.grade:
+
+			frappe.enqueue(
+				"enrollment_system.assignment.assign_grade",
+				assignment_name=self.name
+			)
+
 
 @frappe.whitelist()
 @frappe.validate_and_sanitize_search_inputs
