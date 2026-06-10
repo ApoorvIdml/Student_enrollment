@@ -10,7 +10,8 @@
   "phone_number",
   "enrollment_date",
   "status",
-  "attendance_count"
+  "attendance_count",
+  "user"
  ],
  "fields": [
   {
@@ -47,12 +48,18 @@
    "fieldname": "attendance_count",
    "fieldtype": "Int",
    "label": "Attendance Count"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 14:42:48.697979",
+ "modified": "2026-06-09 11:24:19.403833",
  "modified_by": "Administrator",
  "module": "Enrollment System",
  "name": "Student",
@@ -67,6 +74,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student Manager",
    "share": 1,
    "write": 1
   }

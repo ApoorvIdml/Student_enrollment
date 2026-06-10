@@ -6,7 +6,8 @@
  "engine": "InnoDB",
  "field_order": [
   "course_name",
-  "course_fee"
+  "course_fee",
+  "available_seats"
  ],
  "fields": [
   {
@@ -20,12 +21,17 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Course Fee"
+  },
+  {
+   "fieldname": "available_seats",
+   "fieldtype": "Int",
+   "label": "Available Seats"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 08:08:18.855089",
+ "modified": "2026-06-10 09:15:06.691776",
  "modified_by": "Administrator",
  "module": "Enrollment System",
  "name": "Course",
@@ -42,6 +48,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Course Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",

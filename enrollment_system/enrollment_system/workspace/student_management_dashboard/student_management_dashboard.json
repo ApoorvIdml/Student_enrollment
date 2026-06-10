@@ -1,0 +1,54 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"sQVv-rScyC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Student Management Dashboard</span>\",\"col\":12}},{\"id\":\"7JNYR3Sx_2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Enrollments\",\"col\":3}},{\"id\":\"yB1--0HsFy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Courses\",\"col\":3}},{\"id\":\"V5PSJae_MZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Students\",\"col\":3}}]",
+ "creation": "2026-06-09 10:03:26.373676",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "menu",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Student Management Dashboard",
+ "links": [],
+ "modified": "2026-06-09 10:14:26.872229",
+ "modified_by": "Administrator",
+ "module": "Enrollment System",
+ "name": "Student Management Dashboard",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Enrollments",
+   "link_to": "Enrollment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Courses",
+   "link_to": "Course",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Students",
+   "link_to": "Student",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Student Management Dashboard"
+}

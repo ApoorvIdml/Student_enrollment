@@ -17,3 +17,35 @@ class Enrollment(Document):
 
         if self.registration_fee < 0:
             frappe.throw("Registration Fee cannot be negative")
+
+    def on_submit(self):
+
+        try:
+
+            course = frappe.get_doc("Course", self.course)
+
+            course.available_seats -= 1
+
+            course.save()
+
+        except Exception as e:
+
+            frappe.log_error(
+                f"Error while decreasing seats: {str(e)}"
+            )
+
+    def on_cancel(self):
+
+        try:
+
+            course = frappe.get_doc("Course", self.course)
+
+            course.available_seats += 1
+
+            course.save()
+
+        except Exception as e:
+
+            frappe.log_error(
+                f"Error while increasing seats: {str(e)}"
+            )
